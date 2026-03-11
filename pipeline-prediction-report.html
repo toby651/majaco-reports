@@ -241,15 +241,35 @@
         font-size: 0.8rem;
         color: var(--text-light);
     }
+    .view-online-banner {
+        background: #006458;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 0.85rem;
+        font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    .view-online-banner a {
+        color: #DAF11B;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .view-online-banner a:hover {
+        text-decoration: underline;
+    }
 </style>
 </head>
 <body>
+<div class="view-online-banner">
+    Charts and interactive elements don't render in email &mdash;
+    <a href="https://toby651.github.io/majaco-reports/bd-pipeline-report.html" target="_blank">view the full report online</a>
+</div>
 <div class="container">
 
 <div class="header">
     <h1>Pipeline Prediction Report</h1>
     <div class="subtitle">How accurate are our pipeline predictions? Where should we recalibrate?</div>
-    <div class="meta">Report generated 11 March 2026 &middot; Latest snapshot: 2026-03-11 &middot; 2 snapshots in database</div>
+    <div class="meta">Report generated 11 March 2026 &middot; Latest snapshot: 2026-03-11 &middot; 3 snapshots in database</div>
 </div>
 
 <!-- KPIs -->
@@ -534,7 +554,9 @@ Spoke briefly Feb 19th - busy with sick son - to try again w/c...</td>
             <td class="num">&pound;8,500</td>
             <td class="commentary">James to confirm scope with Connor & Joe + agree day rate for the work
 
-James to send proposal to Connor 9/3</td>
+James to send proposal to Connor 9/3
+
+Await Connor's response — follow up if n...</td>
             <td>James Littlewood</td>
         </tr></tbody>
         </table>
@@ -1556,7 +1578,7 @@ James to send proposal to Connor 9/3</td>
     <p class="desc">CRM data captured in this snapshot for future analysis (including sentiment analysis on text fields).</p>
     <div class="kpi-grid">
         <div class="kpi">
-            <div class="value">3201</div>
+            <div class="value">3202</div>
             <div class="label">Text Fields Captured</div>
         </div>
         <div class="kpi">
@@ -1568,7 +1590,7 @@ James to send proposal to Connor 9/3</td>
 
 <div class="footer">
     majaco Pipeline Prediction Report &middot; Generated 11 March 2026<br>
-    Data sourced from 2 weekly snapshots of the Notion CRM &middot; 3201 text fields indexed for sentiment analysis
+    Data sourced from 3 weekly snapshots of the Notion CRM &middot; 3202 text fields indexed for sentiment analysis
 </div>
 
 </div>
@@ -1857,7 +1879,7 @@ new Chart(document.getElementById('timeChart'), {
         datasets: [
             {
                 label: 'Total Pipeline Fees',
-                data: [18516200.0, 17816200.0],
+                data: [18516200.0, 35632400.0],
                 borderColor: COLORS.blue,
                 backgroundColor: COLORS.blueFade,
                 fill: true,
@@ -1867,7 +1889,7 @@ new Chart(document.getElementById('timeChart'), {
             },
             {
                 label: 'Weighted Pipeline',
-                data: [2827390.0, 2762390.0],
+                data: [2827390.0, 5524780.0],
                 borderColor: COLORS.amber,
                 backgroundColor: COLORS.amberFade,
                 fill: true,
@@ -1896,7 +1918,7 @@ new Chart(document.getElementById('statusOverTime'), {
         datasets: [
             {
                 label: 'Pursuing',
-                data: [39, 37],
+                data: [39, 74],
                 backgroundColor: COLORS.blue,
                 borderRadius: 2,
             },
@@ -1908,13 +1930,13 @@ new Chart(document.getElementById('statusOverTime'), {
             },
             {
                 label: 'Won',
-                data: [19, 19],
+                data: [19, 38],
                 backgroundColor: COLORS.green,
                 borderRadius: 2,
             },
             {
                 label: 'Lost',
-                data: [18, 24],
+                data: [18, 48],
                 backgroundColor: COLORS.red,
                 borderRadius: 2,
             }
