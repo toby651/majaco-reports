@@ -291,8 +291,8 @@
 
     <div class="momentum-grid">
         <div class="momentum-card advancing">
-            <div class="m-value">11 deals</div>
-            <div class="m-sub">Advancing &middot; &pound;798,440 weighted</div>
+            <div class="m-value">9 deals</div>
+            <div class="m-sub">Advancing &middot; &pound;698,440 weighted</div>
         </div>
         <div class="momentum-card stalling">
             <div class="m-value">11 deals</div>
@@ -455,7 +455,7 @@ Spoke briefly Feb 19th - busy with sick son - to try again w/c...</td>
     <p class="desc">Deals classified as advancing based on their Next Steps and Notes commentary.
     The signal chart shows which positive keywords appear most frequently &mdash; these are the behaviours that correlate with pipeline progression.</p>
 
-    <div class="insight good"><strong>11 deals (&pound;798,440 weighted) show active forward momentum</strong> &mdash; recent meetings, proposals sent, positive client signals, or confirmed next steps.</div>
+    <div class="insight good"><strong>9 deals (&pound;698,440 weighted) show active forward momentum</strong> &mdash; recent meetings, proposals sent, positive client signals, or confirmed next steps.</div>
 
     <div class="chart-grid">
         <div class="chart-card wide">
@@ -480,13 +480,6 @@ Spoke briefly Feb 19th - busy with sick son - to try again w/c...</td>
             </thead>
             <tbody><tr>
             <td></td>
-            <td>Redzone Deployment 1</td>
-            <td>6 - Project Proposal</td>
-            <td class="num">&pound;25,000</td>
-            <td class="commentary">Nail the deployment in March - starting 30th March.</td>
-            <td>Jack Taylor</td>
-        </tr><tr>
-            <td></td>
             <td>Redzone Deployment 2</td>
             <td>6 - Project Proposal</td>
             <td class="num">&pound;27,000</td>
@@ -507,13 +500,6 @@ James to send proposal to Connor 9/3</td>
             <td>6 - Project Proposal</td>
             <td class="num">&pound;86,940</td>
             <td class="commentary">Tim presenting proposal to SLT Friday 13 Mar, seeking £120k budget approval. Follow up Monday 16 Mar for outcome. If guarantee model preferred, additi...</td>
-            <td>Toby Parnell</td>
-        </tr><tr>
-            <td><span class="badge advancing">assessment underway</span> <span class="badge advancing">agreed</span> <span class="badge advancing">started</span></td>
-            <td>Becketts - Assessment</td>
-            <td>5 - Ax Signed</td>
-            <td class="num">&pound;75,000</td>
-            <td class="commentary">Assessment underway — started 2 Mar 2026, going well. Pre-align session with Joe Cornes and Kris Kurowski on 16 Mar. Final presentation 17 Mar 2026.</td>
             <td>Toby Parnell</td>
         </tr><tr>
             <td><span class="badge advancing">agreed</span> <span class="badge advancing">approved</span> <span class="badge advancing">progressing</span></td>
@@ -1621,7 +1607,7 @@ new Chart(document.getElementById('momentumCounts'), {
     data: {
         labels: ["Advancing", "Stalling", "At Risk", "Neutral", "No Commentary"],
         datasets: [{
-            data: [11, 11, 5, 10, 0],
+            data: [9, 11, 5, 10, 0],
             backgroundColor: ['#059669', '#d97706', '#dc2626', '#94a3b8', '#e2e8f0'],
             borderWidth: 2,
             borderColor: '#fff',
@@ -1641,7 +1627,7 @@ new Chart(document.getElementById('momentumValues'), {
     data: {
         labels: ["Advancing", "Stalling", "At Risk", "Neutral", "No Commentary"],
         datasets: [{
-            data: [798440.0, 401200.0, 691000.0, 871750.0, 0],
+            data: [698440.0, 401200.0, 691000.0, 871750.0, 0],
             backgroundColor: ['rgba(5,150,105,0.2)', 'rgba(217,119,6,0.2)', 'rgba(220,38,38,0.2)', 'rgba(148,163,184,0.1)', 'rgba(226,232,240,0.3)'],
             borderColor: ['#059669', '#d97706', '#dc2626', '#94a3b8', '#cbd5e1'],
             borderWidth: 1.5,
@@ -1664,9 +1650,9 @@ new Chart(document.getElementById('momentumValues'), {
 new Chart(document.getElementById('positiveSignals'), {
     type: 'bar',
     data: {
-        labels: ["reached out", "site visit", "agreed", "meeting arranged", "presenting", "proposal submitted", "confirmed", "follow up monday", "budget approval", "assessment underway"],
+        labels: ["reached out", "site visit", "meeting arranged", "presenting", "proposal submitted", "confirmed", "follow up monday", "budget approval", "strong potential", "agreed"],
         datasets: [{
-            data: [3, 2, 2, 1, 1, 1, 1, 1, 1, 1],
+            data: [3, 2, 1, 1, 1, 1, 1, 1, 1, 1],
             backgroundColor: COLORS.greenFade,
             borderColor: COLORS.green,
             borderWidth: 1.5,
